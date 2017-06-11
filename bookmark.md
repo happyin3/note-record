@@ -1,0 +1,58 @@
+
+dingame](https://www.codingame.com/start)
+
+[编程派](http://codingpy.com/)
+
+[Linux命令:修改文件权限命令chmod、chgrp、chown详解](http://yusi123.com/3097.html)
+
+[Nginx开发从入门到精通](http://tengine.taobao.org/book/index.html)
+
+[基本线性数据结构的Python实现](http://python.jobbole.com/86144/)
+
+[深入 Python 列表的内部实现](http://python.jobbole.com/82549/)
+
+[Problem Solving with Algorithms and Data Structures using Python](http://interactivepython.org/runestone/static/pythonds/index.html)
+
+[对 Python 迭代的深入研究](http://kuanghy.github.io/2016/05/18/python-iteration)
+
+[私人珍藏的CHROME插件，吐血推荐](http://stormzhang.com/devtools/2016/01/15/google-chrome-extension/)
+
+[聊一聊 cookie](https://segmentfault.com/a/1190000004556040)
+
+[Tornado开发技巧](http://blog.jqian.net/post/tornado.html)
+
+[科普一下公有云的网络](http://weibo.com/ttarticle/p/show?id=2309404079443999097225)
+
+[关于阿里云经典网络的问题](http://weibo.com/ttarticle/p/show?id=2309404079841686247162#_loginLayer_1488246640231)
+
+[分析Tornado的协程实现](https://www.binss.me/blog/analyse-the-implement-of-coroutine-in-tornado/)
+
+[一个合格的程序员应该读过哪些书](http://justjavac.com/other/2012/05/15/qualified-programmer-should-read-what-books.html)
+
+[你会做WEB上的用户登录功能吗？](http://coolshell.cn/articles/5353.html)
+
+[开源搜索引擎的比较](http://m635674608.iteye.com/blog/2233130)
+
+[基于 vue2 + vuex 构建一个具有 45 个页面的大型单页面应用](http://www.vue-js.com/topic/58abbd21a9c1282817afc28d)
+
+[Python漫游指南](http://python-guide.jetz.io/zh_CN/latest/index.html)
+
+[What's your opinion on what to include in __init__.py ?](https://www.reddit.com/r/Python/comments/1bbbwk/whats_your_opinion_on_what_to_include_in_init_py/)
+
+[最全面的 Material Design 学习资料](https://segmentfault.com/a/1190000008608758?utm_source=weekly&utm_medium=email&utm_campaign=email_weekly)
+
+[Emacs (简体中文)](https://wiki.archlinux.org/index.php/Emacs_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)#.E5.BF.AB.E9.80.9F.E5.85.A5.E9.97.A8)
+
+[Emacs](http://mazhuang.org/wiki/emacs/)
+
+[Emacs，最强编辑器，没有之一](http://www.jianshu.com/p/732157b02ecc#)
+
+[Emacs 编辑环境，第 1 部分: 学习 Emacs 的基础知识](https://www.ibm.com/developerworks/cn/education/aix/emacs1-1/index.html)
+
+[Emacs笔记（保持更新）](http://jollywing.is-programmer.com/2015/11/9/jollywing-emacs-notes.188032.html)
+
+[google开源项目风格指南](http://zh-google-styleguide.readthedocs.io/en/latest/contents/)
+
+[使用生成器展平异步回调结构](https://www.zouyesheng.com/generator-for-async.html)
+
+[pymodm](https://github.com/mongodb/pymodm)
