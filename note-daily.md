@@ -33,3 +33,7 @@ code monkey and tree monkey
 ### 2017-06-21
 
 git查看用户名和密码 `~/.git-credentials`
+
+### 2017-07-06
+
+[String conversions](https://docs.python.org/2.7/reference/expressions.html#string-conversions)
