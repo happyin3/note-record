@@ -37,3 +37,9 @@ git查看用户名和密码 `~/.git-credentials`
 ### 2017-07-06
 
 [String conversions](https://docs.python.org/2.7/reference/expressions.html#string-conversions)
+
+### 2017-07-11
+
+[智能时代的在线数据应用平台kesci](https://www.kesci.com)
+
+[达观数据](http://www.datagrand.com/)

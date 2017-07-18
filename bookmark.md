@@ -77,3 +77,7 @@ dingame](https://www.codingame.com/start)
 ### 2017-06-23
 
 [关于查找数组中是否存在重复元素的方法总结(Find A Duplicate)](http://blog.csdn.net/shaya118/article/details/40896429)
+
+### 2017-07-11
+
+[我对“语言之争”的看法：别随便拉我入场](http://blog.zhaojie.me/2012/08/programming-languages-arguments-dont-pull-me-in.html)
