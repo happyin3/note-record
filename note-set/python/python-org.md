@@ -1,18 +1,16 @@
+<!-- $theme: default -->
+
 # Python
 
 ---
 
-## 缘由
-
 - 社区：一直找不到组织，融入到我党
 - 用户组：Google groups、mailing lists，听说很有用，找到了不知道怎么用
-- 百度、知乎、stackoverflow上各种what、how、why，每个人都表达了自己的所学所识，他们的依据是什么
+- 百度、知乎、stackoverflow上很多what、how、why，每个人都表达了自己的所学所识，他们的依据是什么
 - 知道怎么用后，总想知道为什么是这么设计的，deep and deep，网上总是找不到相关的文章，找到的也是相对零散，不系统（ps：特别是看了松本行弘的两本书之后，讲Ruby的一些特性是怎么设计的，为什么这么设计，能解决什么问题，优缺点式什么，借鉴了哪些，其他语言是怎么实现的）
-- 个人博客——他山之石，可以攻玉，网上分享的一些个人博客，找到了，一方面停更的不少，一方面感觉有点束之高阁（讲的是比较核心，但是不通俗易懂，很少能讲全面，过去、现在、将来。从哪来，打哪去，怎么去）
+- 个人博客——他山之石，可以攻玉，网上分享的一些个人博客，一方面停更的不少，一方面感觉有点束之高阁（讲的是比较核心，但是不通俗易懂，很少能讲全面，过去、现在、将来。从哪来，打哪去，怎么去）
 - 总想了解Python相关的一切
 - ……
-
-出于以上等原因，兜兜转转还是从[Python](https://www.python.org/)官网找到了所有答案。
 
 ---
 
@@ -56,9 +54,8 @@ Python语言布道者，不是核心开发人员（以后研究下怎样才能�
 ## Downloads
 
 - Download：有一些版本更新说明
-
-[Guido van Rossum 有关类型和类统一的文章](https://www.python.org/download/releases/2.2.3/descrintro)
-[The Python 2.3 Method Resolution Order](https://www.python.org/download/releases/2.3/mro/)
+- [Guido van Rossum 有关类型和类统一的文章](https://www.python.org/download/releases/2.2.3/descrintro)
+- [The Python 2.3 Method Resolution Order](https://www.python.org/download/releases/2.3/mro/)
 
 ---
 
