@@ -43,3 +43,9 @@ git查看用户名和密码 `~/.git-credentials`
 [智能时代的在线数据应用平台kesci](https://www.kesci.com)
 
 [达观数据](http://www.datagrand.com/)
+
+### 2017-08-01
+
+http://www.lfd.uci.edu/~gohlke/pythonlibs/#pycairo
+
+http://www.lfd.uci.edu/~gohlke/pythonlibs/#pygtk
