@@ -4,15 +4,15 @@
 
 1. **全局变量**
 ```
-    a = 1
+a = 1
 
-    def func():
-        b = a
-        print b
+def func():
+    b = a
+    print b
 
-    func()
+func()
 
-    >> 1
+>> 1
 ```
 **全局变量**：这里在`func`中使用全局变量a给局部变量b进行了赋值，输出结果1。
 
