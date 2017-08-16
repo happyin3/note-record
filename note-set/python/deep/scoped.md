@@ -1,130 +1,206 @@
 ## Python作用域
 
-> Python 2.7.6
+[PEP 227 -- Statically Nested Scopes](https://www.python.org/dev/peps/pep-0227/)
 
-通过例子来熟悉下Python变量在使用中的几种情况。
+### 代码例子
 
-1. **全局作用域**
+1. 例子1
+
+```
+a = 1
+
+def func():
+    print a
+
+func()
+
+>> 1
+```
+
+全局作用域
+
+2. 例子2
+
+```
+a = 1
+
+def func():
+    a = 2
+    print a
+
+func()
+
+print a
+
+>> 2
+>> 1
+```
+
+局部作用域
+
+3. 例子3
+
+```
+x = 1
+
+for x in range(5):
+    y = x
+
+print x, y
+
+>> 4, 4
+
+func_list = [lambda :x for x in range(10)]
+
+print func_list[0]()
+
+>> 9
+```
+
+块级作用域，Python没有块级作用域
+
+4. 例子4
 
 ```
 a = 1
 
 def func():
     b = a
+    a = 2
     print b
 
 func()
 
->> 1
-```
-
-**全局作用域**：这里在`func`中使用全局变量a给局部变量b进行了赋值，输出结果1。
-
-2. **局部作用域**
-
-```
-def func():
-    a = 1
-    print a
-
-func()
-pirnt a
-
->> 1
->> NameError: name 'name' is not defined
-```
-
-**局部作用域**：`func()`能正确输出1；而在外部直接打印`a`是报错的，因为`a`是定义在函数`func`中的局部变量，在全局中无法调用，即使执行了`func()`，变量`a`的作用域也只是在函数内部，外部依然无法调用。
-
-3. **块级作用域**
-
-```
-if 1:
-    a = 1
-
 print a
 
-for i in range(2):
-    b = i
-
-print i
-print b
-
->> 1
->> 1
->> 1
-```
-
-**块级作用域**：Python没有块级作用域，代码块里的变量，外部可以调用。
-
-4. **嵌套作用域**
-
-```
-a = 1
-
-def func():
-    a = 2
-    def sub():
-        print a
-    return sub
-
-test = func()
-test()
-
->> 2
-```
-
-**嵌套作用域**：`sub()`输出了定义在`sub`父函数`func`中的`a`，查找顺序由内而外。这里有个问题，函数`func`执行完成后，已经退出，函数中定义的变量理应退出，为什么还是正确输出了2，这就涉及**闭包**的概念了。
-
-5. **声明顺序**
-
-```
-a = 1
-
-def func1():
-    global a
-    b = a
-    a = 2
-    print a, b
-
-def func2():
-    b = a
-    a = 2
-    print a, b
-
-func1()
-func2()
-
->> 2, 1
 >> UnboundLocalError: local variable 'a' referenced before assignment
 ```
 
-**声明顺序**：Python变量声明的作用域是“整个块”，即和声明顺序无关。
+声明顺序，Python变量的作用域是整个块，和变量声明位置无关。
 
-6. **混合**
+5. 例子5
 
 ```
-i, j = 1, 3
+a = 1
 
-def outer():
-    def middle(k):
-        def inner():
-            global i
-            i = 4
-        inner()
-        return i, j, k
-    i = 2
-    return middle(j)
+def func():
+    global a
+    b = a
+    a = 2
 
-print outer()
-print i, j
+    def sub():
+        b = 3
+        print a, b
 
->> 2, 3, 3
->> 4, 3
+    sub()
+
+    print a, b
+
+func()
+
+print a
+
+>> 2, 3
+>> 2, 1
+>> 2
 ```
 
-看过以上的例子后，下面来进行一些概念的梳理。
+在Python中，一个嵌套的子程序无法写一个属于外层但又非全局作用域的变量。
 
-### 概念
+6. 例子6
 
-#### 作用域
+```
+a = 1
+
+def func():
+    exec 'a = 2'
+
+    def sub():
+        b = a
+        print a, b
+
+    print a
+
+func()
+
+print a
+
+>> SyntaxError: unqualified exec is not allowed in function 'func' because it contains a nested function with free variables
+
+def func():
+    from args import *
+
+    def sub():
+        b = a
+        print a, b
+
+    sub()
+
+func()
+
+>> SyntaxError: import * is not allowed in function 'func' because it contains a nested function with free variables
+
+a = 1
+
+def func():
+    # in args, a = 2
+    from args import a
+    
+    def sub():
+        b = a
+        print a, b
+
+    sub()
+    print a
+
+func()
+
+print a
+
+>> 2, 2
+>> 2
+>> 1
+
+a = 1
+
+def func():
+    # in args, a = 2
+    import args
+
+    def sub():
+        b = a
+        print a, b
+
+    sub()
+    print a
+
+func()
+
+print a
+
+>> 1, 1
+>> 1
+>> 1
+
+def func():
+    # in args, a = 2
+    import args
+
+    def sub():
+        b = args.a
+        print args.a, b
+
+    sub()
+
+func()
+
+>> 2, 2
+```
+
+### 基础概念
+
+1. 作用域
+2. 静态作用域、动态作用域
+3. 声明次序
+4. 全局作用域、局部作用域、嵌套作用域、、块作用域
+5. 闭包、自由变量
